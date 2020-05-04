@@ -7,7 +7,6 @@
 :root {
   --primary: #f0f8ff;
   --sec: #007fff;
-  --ter: #0047ab;
   --qua: #060c21;
 }
 body {
@@ -32,20 +31,21 @@ main {
   color: #fff;
 }
 .objetivo {
+  width: 90%;
   font-family: "Quicksand", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #fff;
 }
-.integrantes {
+.cajas {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
-.integrante {
-  width: 25%;
-  height: 300px;
+.caja {
+  width: 20%;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,8 +53,39 @@ main {
   border: 5px solid var(--sec);
   background: var(--qua);
   padding: 20px;
+  position: relative;
 }
-
+.caja:hover .numero {
+  top: -60px;
+}
+.cv {
+  height: 300px;
+}
+.numero {
+  width: 100%;
+  font-size: 120px;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+  text-align: end;
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  z-index: 0;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  /* background-color: red; */
+}
+.subtitulo {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  right: 20px;
+  z-index: 1;
+}
 .imagen {
   width: 180px;
   height: 180px;
@@ -75,6 +106,8 @@ main {
 .link {
   font-family: "Quicksand", sans-serif;
   color: #fff;
+  font-size: 16px;
+  font-weight: normal;
   text-decoration: none;
 }
 .link:hover {
