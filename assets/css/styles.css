@@ -133,7 +133,85 @@ footer {
   color: #fff;
   font-family: "Fira Sans", sans-serif;
 }
-
+/* artista */
+.margin {
+  width: 96%;
+  margin: 2%;
+}
+article {
+  width: 100%;
+  display: flex;
+  justify-content: row;
+}
+.artista {
+  width: 25%;
+  margin: 20px;
+}
+.box-art {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--sec);
+  background: var(--qua);
+  padding: 20px;
+}
+.box-art p {
+  display: block;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  text-align: start;
+}
+.imagen-art {
+  width: 200px;
+  height: auto;
+  background: #fff;
+}
+.imagen-art img {
+  width: 98%;
+  height: 98%;
+  margin: 1%;
+  /* border-radius: 50%; */
+}
+.contenido {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.contenido h3 {
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  margin: 20px;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box {
+  width: 25%;
+  border: 5px solid var(--sec);
+  padding: 20px;
+}
+.box h4 {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10px;
+}
+.art {
+  width: 70% !important;
+}
+video {
+  width: 100%;
+  height: auto;
+  /* margin: 0 5%; */
+}
+audio {
+  width: 100%;
+}
 @media screen and (max-width: 800px) {
   .cajas {
     flex-direction: column;
