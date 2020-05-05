@@ -155,7 +155,7 @@ article {
 }
 .box-art {
   width: 90%;
-  height: 500px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,6 +217,22 @@ video {
 }
 audio {
   width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .artista {
+    width: 50%;
+  }
+  .contenido {
+    width: 50%;
+  }
+  .boxes {
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .box {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 800px) {
   .cajas {
